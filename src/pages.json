@@ -1,0 +1,221 @@
+{
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index",
+      "style": {
+        "backgroundColor": "#f8f8f8",
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "真慧住"
+      }
+    },
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "backgroundColor": "#fff"
+      }
+    },
+    {
+      "path": "pages/room/room",
+      "style": {
+        "backgroundColor": "#f6f7f8",
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/mine/mine",
+      "style": {
+        "backgroundColor": "#f6f7f8",
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/hotel/list/list",
+      "style": {
+        "navigationBarTitleText": "酒店列表",
+        "enablePullDownRefresh": false,
+        "backgroundColorTop": "#f8f8f8",
+        "backgroundColorBottom": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/hotel/details/details",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/hotel/info/info",
+      "style": {
+        "navigationBarTitleText": "设施详情",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/hotel/room/room",
+      "style": {
+        "navigationBarTitleText": "房型",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/order/create",
+      "style": {
+        "navigationBarTitleText": "确认订单信息",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/order/pay",
+      "style": {
+        "navigationBarTitleText": "支付订单",
+        "enablePullDownRefresh": false,
+        "usingComponents": {
+          "sqb-pay": "plugin://sqb-pay/sqb-pay"
+        }
+      }
+    },
+    {
+      "path": "pages/order/list",
+      "style": {
+        "navigationBarTitleText": "订单列表",
+        "navigationStyle": "default",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/order/details",
+      "style": {
+        "navigationBarTitleText": "订单详情",
+        "enablePullDownRefresh": false,
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "#555567"
+      }
+    },
+    {
+      "path": "pages/mine/info",
+      "style": {
+        "navigationBarTitleText": "个人信息",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/mine/setting",
+      "style": {
+        "navigationBarTitleText": "设置",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/mine/contact",
+      "style": {
+        "navigationBarTitleText": "常用联系人",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/web/web",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/mine/add-contact",
+      "style": {
+        "navigationBarTitleText": "添加常用入住人",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/order/continuation",
+      "style": {
+        "navigationBarTitleText": "续房",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/room/bind",
+      "style": {
+        "navigationBarTitleText": "绑定开门信息",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/room/clear",
+      "style": {
+        "navigationBarTitleText": "房间打扫",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/face/index",
+      "style": {
+        "navigationBarTitleText": "实名认证",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/face/web",
+      "style": {
+        "navigationBarTitleText": "实名认证",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/face/input",
+      "style": {
+        "navigationBarTitleText": "实名认证",
+        "enablePullDownRefresh": false
+      }
+    }
+  ],
+  "tabBar": {
+    "selectedColor": "#242424",
+    "backgroundColor": "#ffffff",
+    "color": "#999999",
+    "borderStyle": "white",
+    "list": [
+      {
+        "iconPath": "static/tabbar-icon/index.png",
+        "selectedIconPath": "static/tabbar-icon/index-ac.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "static/tabbar-icon/home.png",
+        "selectedIconPath": "static/tabbar-icon/home-ac.png",
+        "pagePath": "pages/room/room",
+        "text": "房间"
+      },
+      {
+        "iconPath": "static/tabbar-icon/user.png",
+        "selectedIconPath": "static/tabbar-icon/user-ac.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "真慧住",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#f6f7f8"
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^ax-(.*)": "@/components/ax-$1/ax-$1.vue",
+      "^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+    }
+  }
+}
